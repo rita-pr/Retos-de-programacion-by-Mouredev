@@ -18,8 +18,6 @@ def area_poligono (poligono, base, altura):
     elif poligono == "C" or poligono == "R":
         area = base * altura
         print(f"El área es de: {area}")
-    else: 
-
 
 poligono = input("Seleccionar polígono:\n[T]riángulo, [C]uadrado, [R]ectángulo: ")
 base = float(input("Ingresar base: "))

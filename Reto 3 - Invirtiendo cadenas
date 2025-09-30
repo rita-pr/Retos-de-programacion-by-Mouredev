@@ -1,0 +1,35 @@
+# ==========================================================================
+# Reto 3 - Invirtiendo una cadena de texto
+# September 29, 2025
+# ==========================================================================
+
+# ==========================================================================
+# * Crea un programa que invierta el orden de una cadena de texto
+# * sin usar funciones propias del lenguaje que lo hagan de forma automática.
+# * - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
+# ==========================================================================
+
+def invertir_cadena (cadena):
+    
+    lista_cadena = list((cadena.strip()).lower())
+
+    lista_letras_invertida = []
+
+    for i in range(1,len(lista_cadena)+1):
+        letra = lista_cadena[-i]
+        lista_letras_invertida.append(letra)
+        
+        cadena_invertida = "".join(lista_letras_invertida)
+
+    return str(cadena_invertida)
+
+cadena = input("Ingrese frase/palabra: ")
+print(invertir_cadena(cadena))
+
+
+
+#Auto feedback: 
+    # - Recordar cómo convertir un string en lista
+
+#Bien hecho:
+    # Hacer pruebas con print para ver qué devolvía
